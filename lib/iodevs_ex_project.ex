@@ -10,9 +10,8 @@ defmodule IodevsExProject do
     options: [
       dia: [
         to: :dialyzer,
-        # default: nil,
-        takes: "ci_platform",
-        desc: "append dialyzer settings (default: nil). Posible values is base, semaphore."
+        default: false,
+        desc: "append dialyzer settings (default: flase)."
       ],
       dialyzer: [same_as: :dia]
     ]
